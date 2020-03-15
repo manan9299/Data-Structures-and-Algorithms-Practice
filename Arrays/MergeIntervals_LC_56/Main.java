@@ -10,7 +10,8 @@ public class Main {
     }
 
     public int[][] merge(int[][] intervals) {
-
+        StringBuilder sb = new StringBuilder(10);
+        
         if(intervals.length <= 1) return intervals;
 
         Comparator<int[]> intervalComp = new Comparator<>(){
